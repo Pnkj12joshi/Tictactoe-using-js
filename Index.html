@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TicTacToe</title>
+    <style>
+      .grid-container {
+        display: grid;
+        grid-template-rows: repeat(3, 100px);
+        grid-template-columns: repeat(3, 100px);
+        margin: 5px;
+      }
+      .grid-items {
+        background-color: aqua;
+        border: 2px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      .outerlayout {
+        margin: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .btnclass {
+        margin: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      button {
+        height: 40px;
+        width: 60px;
+        padding: 10px;
+        border-radius: 10px;
+        background: grey;
+        color: aliceblue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align: center">Tic Tac To</h1>
+    <div class="outerlayout">
+      <div class="grid-container">
+        <div onclick="handleclick(this)" id="0" class="grid-items"></div>
+        <div onclick="handleclick(this)" id="1" class="grid-items"></div>
+        <div onclick="handleclick(this)" id="2" class="grid-items"></div>
+        <div onclick="handleclick(this)" id="3" class="grid-items"></div>
+        <div onclick="handleclick(this)" id="4" class="grid-items"></div>
+        <div onclick="handleclick(this)" id="5" class="grid-items"></div>
+        <div onclick="handleclick(this)" id="6" class="grid-items"></div>
+        <div onclick="handleclick(this)" id="7" class="grid-items"></div>
+        <div onclick="handleclick(this)" id="8" class="grid-items"></div>
+      </div>
+    </div>
+    <div class="btnclass">
+      <button onclick="Refreash()">Replay</button>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
